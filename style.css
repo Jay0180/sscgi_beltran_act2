@@ -1,13 +1,12 @@
 .navbar {
     position: fixed;
-
     background-color: #BCC7CD;
     z-index: 1030;
 
 }
 
 section {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
 }
 
@@ -16,6 +15,7 @@ h3 {
     margin: 10px;
     font-family: Montserrat;
     color: #696969;
+    padding-left: 40px;
 
 }
 
@@ -28,14 +28,18 @@ h4 {
 p {
     font-size: 18px;
     font-family: lora;
+    /* font-style:; */
     color: #708090;
-
+    text-align: justify;
+    letter-spacing: 2px;
+    text-indent: 80px;
 
 }
 
 .container-fluid {
     padding: 60px;
     background-color: #F0F4F8;
+    flex: 1;
 }
 
 .imgcard {
@@ -92,6 +96,10 @@ p {
     background-color: #333;
 }
 
+.contacts {
+    text-align: center;
+}
+
 .icon {
     font-size: 24px;
     color: white;
@@ -109,8 +117,15 @@ p {
     background-color: #41424C;
 }
 
-
-
 .icon:hover {
     color: #BCC7CD;
 }
+
+.footer {
+    color: black;
+    text-align: center;
+    background-color: #333;
+    padding-bottom: 5px;
+}
+
+/* .footer p {} */
