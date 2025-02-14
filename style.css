@@ -123,9 +123,11 @@ p {
 
 .footer {
     color: black;
-    text-align: center;
     background-color: #333;
     padding-bottom: 5px;
 }
 
-/* .footer p {} */
+#footer {
+    padding-top: 5px;
+    text-align: center;
+}
