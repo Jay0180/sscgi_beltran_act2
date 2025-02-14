@@ -1,11 +1,39 @@
+.navbar {
+    position: fixed;
+    padding-bottom: 50px;
+    background-color: #BCC7CD;
+    z-index: 1030;
+
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 400;
+    font-style: verdana;
+    color: #0B0C10;
+}
+
+p {
+    font-size: 15px;
+    font-family: Verdana;
+    color: #708090;
+
+
+}
+
+.container-fluid {
+    padding: 60px;
+    background-color: #F0F4F8;
+}
+
 .imgcard {
     border: #41424C;
     width: 300;
     height: 300;
-}
-
-.navbar {
-    position: fixed
 }
 
 .carousel {

@@ -13,22 +13,22 @@
 
 <body>
     <div class="container-fluid">
-        <div class="navbar navbar-expand">
-            <h2>My Portfolio</h3>
-                <ul class="navbar-nav ms-auto p-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section1">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section2">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section3">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section4">Contact Meh</a>
-                    </li>
-                </ul>
+        <div class="navbar navbar-expand fixed-top">
+            <h2>My Portfolio</h2>
+            <ul class="navbar-nav ms-auto p-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">Contact Meh</a>
+                </li>
+            </ul>
         </div>
         <div class="container">
             <section id="section1">
@@ -67,39 +67,8 @@
                             Nihil ratione nostrum repellendus amet dignissimos voluptas labore assumenda minus beatae
                             enim, obcaecati corrupti mollitia facere id est, perspiciatis quia! Ipsum aliquid quod neque
                             ducimus, fugiat illum nostrum necessitatibus in!
-                            Error quos quia recusandae commodi quaerat consequatur veritatis nemo officiis dicta sunt
-                            quam, neque autem doloribus laborum beatae debitis quisquam aliquam accusamus at non harum
-                            nisi! Ipsum suscipit voluptatibus reiciendis!
-                            Officia aliquid, ad vel repellendus nostrum molestias quidem totam dolores error tempora
-                            fugiat dolore voluptas saepe facere natus harum eligendi exercitationem rerum veritatis
-                            officiis voluptatem. Repudiandae dicta dolores adipisci quia.
-                            Numquam atque aliquid molestias repellat recusandae tempora soluta et sapiente voluptas
-                            veniam libero, nemo unde illo tenetur delectus alias veritatis. Aliquam beatae consequuntur
-                            enim voluptates veritatis aperiam deserunt laborum nulla.
-                            Laborum placeat temporibus, nostrum mollitia magni impedit? Nam voluptatem corporis, ad
-                            asperiores pariatur totam similique ratione. Possimus explicabo doloribus nulla enim
-                            quibusdam praesentium vitae odit exercitationem commodi, et aperiam ullam.
-                            Ea similique tempora, qui mollitia fugiat totam eveniet possimus, ad cumque voluptatem sit
-                            sed consequatur amet commodi quasi officia error et deserunt alias quae. Natus dolorem est
-                            adipisci commodi tempora.
-                            Ipsum, ratione labore! Illo eveniet est dolor nesciunt ab sunt, ex aperiam voluptate maxime
-                            similique earum voluptas obcaecati quae officia maiores dolorum velit quis. Ratione eos
-                            voluptatibus corporis distinctio ipsam?
-                            Assumenda neque perspiciatis at omnis laborum, harum repudiandae nam esse, nulla hic
-                            molestias unde quidem. Molestiae libero numquam excepturi error vero consequuntur,
-                            aspernatur, doloribus, consectetur dolore pariatur labore nam aliquam.
-                            Iste labore iure vel incidunt aut nulla maiores accusamus ex excepturi similique cum
-                            voluptas, accusantium atque ab, quae distinctio molestias harum dolor, odio exercitationem
-                            necessitatibus ea voluptatibus aliquid! Voluptas, numquam.
-                            Sequi nulla recusandae voluptatum assumenda voluptatem eos beatae labore? Eveniet officiis
-                            qui hic consectetur voluptatibus ipsa cumque id quidem minima vel perferendis voluptatum
-                            natus, ducimus ipsum cupiditate vitae maxime? Veritatis!
-                            Quaerat fuga deserunt corrupti ab veritatis ipsum est! Animi sint numquam quisquam quos
-                            dolorum eaque vitae cum esse nobis autem soluta laudantium consequatur eveniet, labore, eius
-                            error iste, expedita adipisci.
-                            Delectus corporis soluta consequuntur inventore ipsa earum, nisi, aliquid eveniet et impedit
-                            accusantium veniam eaque iusto cumque enim ipsum ea harum? Dolorem dolores eaque labore
-                            porro doloremque, sit pariatur nobis.
+                            dae nam esse, nulla hic
+
                             Consequuntur labore modi ducimus fugit nesciunt beatae non dolore voluptate delectus
                             voluptatum, nam temporibus, ut nulla suscipit molestiae obcaecati optio aliquam praesentium
                             odit voluptas. Necessitatibus architecto vero quo laboriosam rem?
@@ -199,10 +168,10 @@
             dot.addEventListener('click', () => {
                 const index = dot.getAttribute('data-index');
 
-                // Move the carousel track
+
                 track.style.transform = `translateX(-${index * 100}%)`;
 
-                // Update active dot
+
                 dots.forEach(d => d.classList.remove('active'));
                 dot.classList.add('active');
             });
@@ -213,7 +182,7 @@
         window.addEventListener("scroll", () => {
             let current = "";
 
-            // Check which section is in the viewport
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
@@ -222,7 +191,7 @@
                 }
             });
 
-            // Highlight the corresponding navbar link
+
             navLinks.forEach(link => {
                 link.classList.remove("active");
                 if (link.getAttribute("href").includes(current)) {
@@ -230,9 +199,6 @@
                 }
             });
         });
-    </script>
-    <script>
-
     </script>
 </body>
 
