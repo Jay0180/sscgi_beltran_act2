@@ -1,25 +1,33 @@
 .navbar {
     position: fixed;
-    padding-bottom: 50px;
+
     background-color: #BCC7CD;
     z-index: 1030;
 
 }
 
 section {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-h2 {
-    font-size: 400;
-    font-style: verdana;
-    color: #0B0C10;
+h2,
+h3 {
+    margin: 10px;
+    font-family: Montserrat;
+    color: #696969;
+
+}
+
+h4 {
+    font-family: Poppins;
+    color: #696969;
+    font-weight: 100;
 }
 
 p {
-    font-size: 15px;
-    font-family: Verdana;
+    font-size: 18px;
+    font-family: lora;
     color: #708090;
 
 
@@ -58,7 +66,7 @@ p {
     text-align: center;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    border-right: 1px solid #ddd;
+    /* border-right: 1px solid #ddd; */
 }
 
 .slide:last-child {
@@ -104,5 +112,5 @@ p {
 
 
 .icon:hover {
-    color: peru;
+    color: #BCC7CD;
 }

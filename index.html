@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Porfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,16 +17,24 @@
             <h2>My Portfolio</h2>
             <ul class="navbar-nav ms-auto p-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#section1">Home</a>
+                    <a class="nav-link" href="#section1">
+                        <h4>Home</h4>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section2">About</a>
+                    <a class="nav-link" href="#section2">
+                        <h4>About</h4>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section3">Projects</a>
+                    <a class="nav-link" href="#section3">
+                        <h4>Projects</h4>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section4">Contact Meh</a>
+                    <a class="nav-link" href="#section4">
+                        <h4>Contact Meh</h4>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -50,9 +58,9 @@
             </section>
             <section id="section2">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <h3>About</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eum a non hic perspiciatis
@@ -160,46 +168,7 @@
         </div>
 
     </div>
-    <script>
-        const track = document.querySelector('.carousel-track');
-        const dots = document.querySelectorAll('.dot');
-
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                const index = dot.getAttribute('data-index');
-
-
-                track.style.transform = `translateX(-${index * 100}%)`;
-
-
-                dots.forEach(d => d.classList.remove('active'));
-                dot.classList.add('active');
-            });
-        });
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        window.addEventListener("scroll", () => {
-            let current = "";
-
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - sectionHeight / 3) {
-                    current = section.getAttribute("id");
-                }
-            });
-
-
-            navLinks.forEach(link => {
-                link.classList.remove("active");
-                if (link.getAttribute("href").includes(current)) {
-                    link.classList.add("active");
-                }
-            });
-        });
-    </script>
 </body>
+<script src="index.js"></script>
 
 </html>
